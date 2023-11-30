@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* -------------------------------------------------------------------------- */
+/*                            CSS REUSEABLE STYLES                            */
+/* -------------------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Lightgray: hsl(212, 45%, 89%);
+  --Grayishblue: hsl(220, 15%, 55%);
+  --Darkblue: hsl(218, 44%, 22%);
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  font-size: 15px;
+  background-color: var(--Lightgray);
+  font-family: "Outfit", sans-serif;
+  place-content: center;
+}
+img {
+  width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               CSS MAIN STYLES                              */
+/* -------------------------------------------------------------------------- */
+img,
+.card {
+  border-radius: 16px;
+}
+.card {
+  text-align: center;
+  padding: 1rem;
+  max-width: 325px;
+  background-color: var(--White);
+}
+
+.card-title {
+  padding-top: 10px;
+  columns: var(--Darkblue);
+  margin-bottom: 10px;
+}
+.card-description {
+  width: 250px;
+  padding-top: 5px;
+  padding-bottom: 1rem;
+  color: var(--Grayishblue);
+  margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            FRONTEND MENTOR STYLE                           */
+/* -------------------------------------------------------------------------- */
+.attribution {
+  position: absolute;
+  font-size: 11px;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
